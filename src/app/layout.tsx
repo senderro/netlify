@@ -6,7 +6,7 @@ import Footer from "../../res/footer";
 
 
 export const metadata: Metadata = {
-  title: "Marcos Lucio Advogacia",
+  title: "Marcos Lucio Advocacia",
   description: "GMarcos Lucio Advogacia Colatina",
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };

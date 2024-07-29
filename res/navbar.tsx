@@ -58,10 +58,10 @@ const NavBar: React.FC = () => {
         </button>
         <div className={`navbar-menu ${isMenuOpen ? 'navbar-menu-open' : ''}`} id="navbar-menu">
           <ul className="navbar-menu-list">
-            <li><Link href="/" className="navbar-menu-link" aria-current="page">Início</Link></li>
-            <li><Link href="/sobre" className="navbar-menu-link">Sobre</Link></li>
-            <li><Link href="/servicos" className="navbar-menu-link">Serviços</Link></li>
-            <li><Link href="/contato" className="navbar-menu-link">Entre em contato</Link></li>
+            <li><Link href="/" className="navbar-menu-link" aria-current="page">INÍCIO</Link></li>
+            <li><Link href="/sobre" className="navbar-menu-link">SOBRE</Link></li>
+            <li><Link href="/servicos" className="navbar-menu-link">SERVIÇOS</Link></li>
+            <li><Link href="/contato" className="navbar-menu-link">ENTRE EM CONTATO</Link></li>
           </ul>
         </div>
       </div>
