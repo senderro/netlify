@@ -1,0 +1,88 @@
+/* teamSection.css */
+
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f9f9f9; /* Cor de fundo clara para destacar os membros da equipe */
+  }
+  
+  .team-section-title {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    font-weight: 700; /* Peso da fonte para destacar o título */
+    color: #0033cc; /* Cor azul para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    position: relative; /* Para permitir a linha dourada abaixo */
+  }
+  
+  .team-section-title::after {
+    content: '';
+    display: block;
+    width: 80px; /* Largura da linha dourada */
+    height: 4px; /* Altura da linha dourada */
+    background-color: #ffd700; /* Cor dourada para a linha */
+    position: absolute;
+    bottom: -10px; /* Ajuste a posição da linha abaixo do título */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza a linha em relação ao título */
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    background-color: #fff; /* Cor de fundo branca para cada membro da equipe */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    overflow: hidden; /* Garante que nada saia das bordas arredondadas */
+  }
+  
+  .team-member.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .team-member.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .team-member-image {
+    flex: 1;
+    position: relative;
+    height: 100%; /* Garante que a imagem ocupe toda a altura do contêiner */
+  }
+  
+  .team-member-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #0033cc; /* Cor azul para o texto */
+  }
+  
+  .team-member-text p {
+    margin: 0;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+  }
+  
+  @media (max-width: 768px) {
+    .team-member {
+      flex-direction: column;
+    }
+  
+    .team-member.reverse {
+      flex-direction: column;
+    }
+  
+    .team-member-image {
+      height: 300px; /* Ajuste a altura conforme necessário para telas menores */
+    }
+  }
+  
