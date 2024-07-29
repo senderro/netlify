@@ -36,8 +36,8 @@ const NavBar: React.FC = () => {
         <Link href="https://www.instagram.com/marcos_lucio_nogueira/" className="navbar-logo">
           <Image
             src="/logo.png"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             alt="Foto"
           />
           <div className={`navbar-title ${baskervville.className}`}>
@@ -58,10 +58,10 @@ const NavBar: React.FC = () => {
         </button>
         <div className={`navbar-menu ${isMenuOpen ? 'navbar-menu-open' : ''}`} id="navbar-menu">
           <ul className="navbar-menu-list">
-            <li><Link href="#" className="navbar-menu-link" aria-current="page">Início</Link></li>
-            <li><Link href="#" className="navbar-menu-link">Sobre</Link></li>
-            <li><Link href="#" className="navbar-menu-link">Serviços</Link></li>
-            <li><Link href="#" className="navbar-menu-link">Entre em contato</Link></li>
+            <li><Link href="/" className="navbar-menu-link" aria-current="page">Início</Link></li>
+            <li><Link href="/sobre" className="navbar-menu-link">Sobre</Link></li>
+            <li><Link href="/servicos" className="navbar-menu-link">Serviços</Link></li>
+            <li><Link href="/contato" className="navbar-menu-link">Entre em contato</Link></li>
           </ul>
         </div>
       </div>

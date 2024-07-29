@@ -1,0 +1,11 @@
+.mapa {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    height: 100vh; /* Faz a div ocupar a altura total da viewport */
+  }
+  
+  .mapa iframe {
+    border: 0; /* Remove a borda padrão do iframe */
+  }
+  

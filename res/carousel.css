@@ -28,17 +28,16 @@
   }
   
   .controls {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  position: absolute;
+  bottom: 10px; /* Ajusta a distância do fundo */
+  width: 100%;
   }
   
   .btn {
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background: white; /* Cor de fundo dos botões não ativos */
     border: 2px solid rgb(2, 51, 127); /* Cor da borda dos botões não ativos */
